@@ -1,24 +1,29 @@
 let canvas = document.getElementById("areaJuego");
 let ctx= canvas.getContext("2d");
 
-let gatoX = canvas.width/2-20;
-let gatoY= canvas.height/2-10;
-let comidaX= 0;
-let comidaY= 0;
-
 const ALTO_GATO=70;
 const ANCHO_GATO=90;
 const ALTO_COMIDA=80;
 const ANCHO_COMIDA=40;
 
+let gatoX = (canvas.width/2)-(ANCHO_GATO/2);
+let gatoY= (canvas.height/2)-(ALTO_GATO/2);
+let comidaX= 0;
+let comidaY= 0;
+
+
+
+function graficarRectangulo (x,y,ancho,alto,color){
+    ctx.fillStyle = color;
+    ctx.fillRect(x,y,ancho,alto);
+}
+
 function graficarGato(){
-    ctx.fillStyle = "#5f4a4a";
-    ctx.fillRect(gatoX, gatoY, ANCHO_GATO, ALTO_GATO);
+    graficarRectangulo(gatoX,gatoY,ANCHO_GATO,ALTO_GATO,"#8c5c13");
 }
 
 function graficarComida(){
-    ctx.fillStyle = "#10b742";
-    ctx.fillRect(comidaX,comidaY,ANCHO_COMIDA,ALTO_COMIDA);
+    graficarRectangulo(comidaX, comidaY, ANCHO_COMIDA, ALTO_COMIDA, "#a7b73b")
 }
 
 function iniciarJuego(){
