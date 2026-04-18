@@ -40,8 +40,22 @@ function moverIzquierda(){
     actualizarPantalla();
 }
 
+function moverDerecha(){
+    gatoX= gatoX+10;
+    actualizarPantalla();
+}
+function moverArriba(){
+    gatoY= gatoY-10;
+    actualizarPantalla();
+}
+
+function moverAbajo(){
+    gatoY= gatoY+10;
+    actualizarPantalla();
+}
 function actualizarPantalla(){
     limpiarCanva();
     graficarGato();
     graficarComida();
 }
+
