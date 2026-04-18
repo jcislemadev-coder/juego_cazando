@@ -30,3 +30,18 @@ function iniciarJuego(){
     graficarGato();
     graficarComida();
 }
+
+function limpiarCanva(){
+    ctx.clearRect(0,0,500,500);
+}
+
+function moverIzquierda(){
+    gatoX= gatoX-10;
+    actualizarPantalla();
+}
+
+function actualizarPantalla(){
+    limpiarCanva();
+    graficarGato();
+    graficarComida();
+}
