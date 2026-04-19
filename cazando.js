@@ -11,7 +11,7 @@ let gatoY= (canvas.height/2)-(ALTO_GATO/2);
 let comidaX= 0;
 let comidaY= 0;
 let puntaje=0;
-
+let tiempo = 10;
 
 function graficarRectangulo (x,y,ancho,alto,color){
     ctx.fillStyle = color;
@@ -26,7 +26,17 @@ function graficarComida(){
     graficarRectangulo(comidaX, comidaY, ANCHO_COMIDA, ALTO_COMIDA, "#a7b73b")
 }
 
+function restarTiempo(){
+    tiempo = tiempo - 1;
+    mostrarenSpan("tiempo",tiempo)
+    if (puntaje < 6 && tiempo <= 0){
+        alert("GAME OVER")
+        clearInterval(intervalo);
+        return;
+    }
+}
 function iniciarJuego(){
+    intervalo = setInterval(restarTiempo,1000)
     graficarGato();
     graficarComida();
 }
@@ -36,24 +46,24 @@ function limpiarCanva(){
 }
 
 function moverIzquierda(){
-    gatoX= gatoX-10;
+    gatoX= gatoX-40;
     actualizarPantalla();
     detectarColision();
 }
 
 function moverDerecha(){
-    gatoX= gatoX+10;
+    gatoX= gatoX+40;
     actualizarPantalla();
     detectarColision();
 }
 function moverArriba(){
-    gatoY= gatoY-10;
+    gatoY= gatoY-40;
     actualizarPantalla();
     detectarColision();
 }
 
 function moverAbajo(){
-    gatoY= gatoY+10;
+    gatoY= gatoY+40;
     actualizarPantalla();
     detectarColision();
 }
@@ -72,11 +82,31 @@ function detectarColision(){
        mostrarenSpan ("puntos",puntaje);
     aparecerComida();
     }
+    if (puntaje >= 6  && tiempo > 0){
+        alert("GANADOR")
+        clearInterval(intervalo);
+        return;
+    }
+
 }
 
 function aparecerComida(){
-    comidaX=generarAleatorio(0,canvas.width-ANCHO_COMIDA);
-    comidaY=generarAleatorio(canvas.width-ALTO_COMIDA ,0);
+    comidaX=generarAleatorio(canvas.width-ANCHO_COMIDA,0);
+    comidaY=generarAleatorio(0,canvas.height-ALTO_COMIDA ,0);
     actualizarPantalla()
 }
 
+function reiniciar(){
+    puntaje = 0
+    tiempo = 10
+
+    mostrarenSpan("puntos",puntaje);
+    mostrarenSpan("tiempo",tiempo);
+
+    comidaX =0;
+    comidaY=0;
+
+    gatoX = (canvas.width/2)-(ANCHO_GATO/2);
+    gatoY= (canvas.height/2)-(ALTO_GATO/2);
+    actualizarPantalla()
+}
