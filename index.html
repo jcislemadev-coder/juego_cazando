@@ -1,34 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juego Cazando</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="cazando.css"/>
-  <canvas id="areaJuego" width="500" height="500"></canvas>
   <script src="utilis.js"></script>
 </head>
 <body onload="iniciarJuego()">
 
-  <h1>Juego Cazando</h1>
-  <p>Autora: Jessica Cislema</p>
+  <div class="app">
+    <header class="header">
+      <h1>🐱 Caza al Ratón</h1>
+      <p>Guía al gato hasta su presa</p>
+    </header>
 
-  <button onclick="reiniciar()">REINICIAR</button>
-  <div class="controles">
-    <button onclick="moverArriba();">⬆</button>
-    <br>
-    <button onclick="moverIzquierda();">⬅</button>
-    <button onclick="moverAbajo();">⬇</button>
-    <button onclick="moverDerecha();">➡</button>
-  
+    <main class="main">
+      <section class="game-area">
+        <canvas id="areaJuego" width="500" height="500"></canvas>
+      </section>
+
+      <aside class="sidebar">
+        <div class="panel">
+          <div class="stat">
+            <span>Puntos</span>
+            <strong id="puntos">0</strong>
+          </div>
+          <div class="stat">
+            <span>Tiempo</span>
+            <strong id="tiempo">10</strong>
+          </div>
+        </div>
+
+        <div class="controles">
+          <button onclick="moverArriba()">⬆</button>
+          <div class="middle">
+            <button onclick="moverIzquierda()">⬅</button>
+            <button onclick="moverAbajo()">⬇</button>
+            <button onclick="moverDerecha()">➡</button>
+          </div>
+        </div>
+
+        <button class="reiniciar" onclick="reiniciar()">Reiniciar</button>
+      </aside>
+    </main>
+
+    <footer>
+      <p id="mensaje"></p>
+    </footer>
   </div>
 
-
-  <div class="panel">
-    <span>Puntos: <span id="puntos">0</span></span>
-    <span>Tiempo: <span id="tiempo">10</span></span>
-  </div>
-
-  <p id="mensaje"></p>
   <script src="cazando.js"></script>
-
 </body>
 </html>
+
+

@@ -1,0 +1,65 @@
+1. Actua como diseñador grafico, deseo hacer una mejora de la interfaz de este juego no hay que cambiar los IDs  solo la parte visual y mejorarla el objetivo es que el gato se coma al ratón
+
+
+2. Actúa como un diseñador gráfico profesional experto en UI/UX y desarrollo frontend.
+
+Voy a proporcionarte dos archivos: un archivo HTML y un archivo CSS. Tu tarea es rediseñar completamente la interfaz para que sea moderna, atractiva, profesional y visualmente impactante, aplicando principios de diseño gráfico como jerarquía visual, uso adecuado del color, tipografía, espaciado, alineación y consistencia.
+
+Objetivos específicos:
+
+* Mejorar significativamente la apariencia visual (estilo moderno tipo landing page o app actual).
+* Usar una paleta de colores coherente y atractiva.
+* Mejorar tipografía (puedes usar Google Fonts si lo consideras necesario).
+* Aplicar sombras, bordes redondeados, efectos hover y transiciones suaves.
+* Optimizar el layout usando Flexbox o CSS Grid.
+* Hacer el diseño responsive (adaptable a móviles y tablets).
+* Mantener la estructura funcional del HTML (no romper funcionalidades existentes).
+* Si es necesario, puedes reorganizar el HTML para mejorar el diseño.
+
+Instrucciones importantes:
+
+* Devuélveme ÚNICAMENTE el código final del HTML y el CSS.
+* No incluyas explicaciones ni comentarios fuera del código.
+* Separa claramente el HTML y el CSS.
+* El resultado debe parecer hecho por un diseñador profesional.
+
+Aquí están los archivos:
+
+HTML:
+[PEGA AQUÍ TU HTML]
+
+CSS:
+[PEGA AQUÍ TU CSS]
+
+
+2. Actúa como un diseñador gráfico profesional experto en UI/UX y desarrollo frontend.
+
+Voy a subir dos archivos: uno HTML y uno CSS. Analízalos y rediseña completamente la interfaz para que sea moderna, atractiva y profesional, aplicando principios de diseño como jerarquía visual, tipografía, color, espaciado y consistencia.
+
+Objetivos:
+
+* Mejorar drásticamente el diseño visual (estilo moderno tipo app o landing page).
+* Aplicar una paleta de colores armoniosa.
+* Mejorar la tipografía (puedes usar Google Fonts).
+* Añadir efectos visuales sutiles (hover, sombras, transiciones).
+* Usar Flexbox o CSS Grid para un layout limpio.
+* Hacer el diseño responsive.
+* Mantener la funcionalidad original.
+
+Instrucciones de salida (MUY IMPORTANTE):
+
+* Devuelve el resultado en DOS BLOQUES SEPARADOS.
+* Primero el archivo HTML completo.
+* Luego el archivo CSS completo.
+* NO mezcles HTML y CSS en un solo bloque.
+* NO incluyas explicaciones, solo el código.
+* Mantén cada archivo listo para usar.
+
+Formato de respuesta obligatorio:
+
+--- HTML ---
+(código completo aquí)
+
+--- CSS ---
+(código completo aquí)
+
