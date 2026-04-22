@@ -4,29 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juego Cazando</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="cazando.css"/>
   <script src="utilis.js"></script>
 </head>
+
 <body onload="iniciarJuego()">
 
+  <div class="overlay"></div>
+
   <div class="app">
+
     <header class="header">
       <h1>🐱 Caza al Ratón</h1>
       <p>Guía al gato hasta su presa</p>
     </header>
 
     <main class="main">
+
       <section class="game-area">
         <canvas id="areaJuego" width="500" height="500"></canvas>
       </section>
 
       <aside class="sidebar">
+
         <div class="panel">
           <div class="stat">
             <span>Puntos</span>
             <strong id="puntos">0</strong>
           </div>
+
           <div class="stat">
             <span>Tiempo</span>
             <strong id="tiempo">10</strong>
@@ -42,17 +50,20 @@
           </div>
         </div>
 
-        <button class="reiniciar" onclick="reiniciar()">Reiniciar</button>
+        <button class="reiniciar" onclick="reiniciar()">🔄 Reiniciar</button>
+
       </aside>
+
     </main>
 
     <footer>
       <p id="mensaje"></p>
     </footer>
+
   </div>
 
   <script src="cazando.js"></script>
+
 </body>
 </html>
-
 

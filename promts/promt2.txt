@@ -1,0 +1,73 @@
+4. quiero colocar la imagen que reposa en este link https://es.vecteezy.com/arte-vectorial/3464578-divertido-gato-gordo-jugando-comiendo-sin-patron-textura-fondo como fondo del juego dame el codigo en html 
+
+5. Actúa como un diseñador gráfico profesional experto en UI/UX y desarrollo frontend.
+
+Voy a subir dos archivos: uno HTML y uno CSS, y además te proporcionaré un link de una imagen. Tu tarea es rediseñar completamente la interfaz para que sea moderna, atractiva y profesional, integrando la imagen como fondo principal del diseño.
+
+Objetivos:
+
+* Mejorar significativamente la apariencia visual (estilo moderno tipo landing page o app).
+* Usar la imagen proporcionada como fondo (background), asegurando buena legibilidad del contenido encima (puedes usar overlays, gradientes o filtros si es necesario).
+* Aplicar una paleta de colores coherente basada en la imagen.
+* Mejorar la tipografía (puedes usar Google Fonts).
+* Añadir efectos visuales sutiles (hover, sombras, transiciones).
+* Optimizar el layout usando Flexbox o CSS Grid.
+* Hacer el diseño completamente responsive.
+* Mantener la funcionalidad original del HTML.
+
+Instrucciones importantes:
+
+* Usa el link de la imagen como background en CSS (background-image).
+* Ajusta propiedades como background-size, background-position y overlays para un acabado profesional.
+* Devuelve el resultado en DOS BLOQUES SEPARADOS.
+* Primero el HTML completo.
+* Luego el CSS completo.
+* NO mezcles HTML y CSS.
+* NO incluyas explicaciones, solo el código.
+* El resultado debe estar listo para usarse directamente.
+
+Formato obligatorio:
+
+--- HTML ---
+(código completo aquí)
+
+--- CSS ---
+(código completo aquí)
+
+6.ahora ya no le voy a dar el link de la imagen si no el nombre del archivo que tengo en la misma carpeta que el html y el css se llama juego.jpg
+PROMT OBTENIDO
+Actúa como un diseñador gráfico profesional experto en UI/UX y desarrollo frontend.
+
+Voy a subir dos archivos: uno HTML y uno CSS, y además te indicaré el nombre de una imagen local llamada "juego.jpg" que se encuentra en la misma carpeta. Tu tarea es rediseñar completamente la interfaz para que sea moderna, atractiva y profesional, integrando esa imagen como fondo principal del diseño.
+
+Objetivos:
+
+* Mejorar significativamente la apariencia visual (estilo moderno tipo landing page o app).
+* Usar la imagen "juego.jpg" como fondo (background), asegurando buena legibilidad del contenido (puedes usar overlays, gradientes o filtros).
+* Aplicar una paleta de colores coherente basada en la imagen.
+* Mejorar la tipografía (puedes usar Google Fonts).
+* Añadir efectos visuales sutiles (hover, sombras, transiciones).
+* Optimizar el layout usando Flexbox o CSS Grid.
+* Hacer el diseño completamente responsive.
+* Mantener la funcionalidad original del HTML.
+
+Instrucciones importantes:
+
+* Usa la imagen local "juego.jpg" como background en CSS (background-image: url('juego.jpg')).
+* Ajusta propiedades como background-size, background-position y overlays para un acabado profesional.
+* Devuelve el resultado en DOS BLOQUES SEPARADOS.
+* Primero el HTML completo.
+* Luego el CSS completo.
+* NO mezcles HTML y CSS.
+* NO incluyas explicaciones, solo el código.
+* El resultado debe estar listo para usarse directamente.
+
+Formato obligatorio:
+
+--- HTML ---
+(código completo aquí)
+
+--- CSS ---
+(código completo aquí)
+
+ 
