@@ -1,6 +1,9 @@
 let gato = new Image();
 gato.src = "gato.png";
 
+let raton = new Image();
+raton.src ="raton.png";
+
 let canvas = document.getElementById("areaJuego");
 let ctx= canvas.getContext("2d");
 
@@ -16,21 +19,20 @@ let comidaY= 0;
 let puntaje=0;
 let tiempo = 15;
 
-function graficarRectangulo (x,y,ancho,alto,color){
-    ctx.drawImage(gato, x, y, 40, 40);
+function graficarRectangulo (x,y,ancho,alto){
+    ctx.drawImage(gato, x, y, ANCHO_GATO, ALTO_GATO);
 }
 
-function graficarComidaR (x,y,ancho,alto,color){
-    ctx.fillStyle = " #23a721";
-    ctx.fillRect(comidaX, comidaY, 40, 60);
+function graficarComidaR (x,y,ancho,alto){
+    ctx.drawImage(raton,x,y,ANCHO_COMIDA,ALTO_COMIDA);
 }
 
 function graficarGato(){
-    graficarRectangulo(gatoX,gatoY,ANCHO_GATO,ALTO_GATO,"#8c5c13");
+    graficarRectangulo(gatoX,gatoY,ANCHO_GATO,ALTO_GATO);
 }
 
 function graficarComida(){
-    graficarComidaR(comidaX, comidaY, ANCHO_COMIDA, ALTO_COMIDA, "#a7b73b")
+    graficarComidaR(comidaX, comidaY, ANCHO_COMIDA, ALTO_COMIDA)
 }
 
 function restarTiempo(){
