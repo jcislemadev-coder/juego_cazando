@@ -1,3 +1,6 @@
+let gato = new Image();
+gato.src = "gato.png";
+
 let canvas = document.getElementById("areaJuego");
 let ctx= canvas.getContext("2d");
 
@@ -14,8 +17,12 @@ let puntaje=0;
 let tiempo = 15;
 
 function graficarRectangulo (x,y,ancho,alto,color){
-    ctx.fillStyle = color;
-    ctx.fillRect(x,y,ancho,alto);
+    ctx.drawImage(gato, x, y, 40, 40);
+}
+
+function graficarComidaR (x,y,ancho,alto,color){
+    ctx.fillStyle = " #23a721";
+    ctx.fillRect(comidaX, comidaY, 40, 60);
 }
 
 function graficarGato(){
@@ -23,7 +30,7 @@ function graficarGato(){
 }
 
 function graficarComida(){
-    graficarRectangulo(comidaX, comidaY, ANCHO_COMIDA, ALTO_COMIDA, "#a7b73b")
+    graficarComidaR(comidaX, comidaY, ANCHO_COMIDA, ALTO_COMIDA, "#a7b73b")
 }
 
 function restarTiempo(){
@@ -39,6 +46,9 @@ function iniciarJuego(){
     intervalo = setInterval(restarTiempo,1000)
     graficarGato();
     graficarComida();
+    gato.onload = function() {
+    dibujar(); // o la función donde dibujas el juego
+}
 }
 
 function limpiarCanva(){
