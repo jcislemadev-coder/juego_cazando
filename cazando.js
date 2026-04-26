@@ -81,8 +81,8 @@ function detectarColision(){
        puntaje = puntaje + 1;
        mostrarenSpan ("puntos",puntaje);
     aparecerComida();
-        tiempo = 15;
-    }
+        restarTiempo();
+}
     if (puntaje >= 6  && tiempo > 0){
         alert("GANADOR")
         clearInterval(intervalo);
