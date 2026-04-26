@@ -27,7 +27,7 @@ function graficarComida(){
 }
 
 function restarTiempo(){
-    tiempo = tiempo - 1;
+    tiempo = tiempo-1;
     mostrarenSpan("tiempo",tiempo)
     if (puntaje < 6 && tiempo <= 0){
         alert("GAME OVER")
@@ -81,7 +81,7 @@ function detectarColision(){
        puntaje = puntaje + 1;
        mostrarenSpan ("puntos",puntaje);
     aparecerComida();
-        restarTiempo();
+        tiempo = 15;
     }
     if (puntaje >= 6  && tiempo > 0){
         alert("GANADOR")
